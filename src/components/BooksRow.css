@@ -1,0 +1,132 @@
+
+
+.books__section {
+ padding: 30px 100px 0 100px;
+  
+}
+
+.books__title {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.books__list {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto; 
+}
+
+.book__card {
+  flex: 0 0 calc((100% - 64px) / 5);
+  min-width: 150px;
+}
+
+.book__image {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.book__name {
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.book__author {
+  font-size: 12px;
+  color: #777;
+}
+.book__subtitle {
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.book__meta {
+  display: flex;
+  gap: 10px;
+  margin-top: 6px;
+  font-size: 12px;
+  color: #777;
+}
+
+.book__rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.book__card:hover {
+  background-color: #dce9e5;
+}
+
+.book__image-wrapper {
+  position: relative;
+  overflow: visible; 
+}
+
+.book__pill {
+  position: absolute;
+  top: -30px;   
+  right: 8px;
+  pointer-events: none; 
+  background-color: #1f2937;
+  color: white;
+  font-size: 9px;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 20px;
+  z-index: 2;
+}
+
+
+.books__subtitle {
+  margin-bottom: 50px; 
+}
+
+.skeleton {
+  background: #e5e7eb;
+  border-radius: 6px;
+  position: relative;
+  overflow: hidden;
+}
+
+.skeleton::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 150%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.6),
+    transparent
+  );
+  animation: shimmer 1.2s infinite;
+}
+
+@keyframes shimmer {
+  100% {
+    left: 100%;
+  }
+}
+
+.books__section .skeleton--image {
+  width: 100%;
+  height: 140px;
+  border-radius: 6px;
+}
+
+.books__section .skeleton--text {
+  width: 100%;
+  height: 12px;
+  margin: 6px 0;
+}
+
+.books__section .skeleton--text.short {
+  width: 50%;
+}
+
+.books__section .skeleton--meta {
+  width: 30px;
+  height: 12px;
+}

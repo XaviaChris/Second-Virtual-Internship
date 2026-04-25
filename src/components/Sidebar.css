@@ -1,0 +1,153 @@
+.sidebar {
+    background-color: #f7faf9;
+    width: 200px;
+    min-width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 1000;
+    transition: all .3s;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+.sidebar__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    padding-top: 16px;
+    max-width: 160px;
+    margin: 0 auto;
+}
+
+.page__with-sidebar {
+  margin-left: 200px;
+}
+
+.logo__img {
+    width: 100%;
+}
+
+
+
+.links {
+    display: flex;
+    flex-direction: column;
+    flex: 1; 
+}
+
+.bottom__links {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+}
+
+.top__links {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar__icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+.single--link {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 16px;
+    position: relative;
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+}
+
+.single--link.active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 4px;
+  background-color: #73c9ae;
+  border-radius: 0 4px 4px 0;
+}
+
+.single--link.active {
+  font-weight: 600;
+  color: #000000;
+}
+.logout {
+    cursor: pointer; 
+}
+
+.sidebar__font-controls {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.sidebar__font-controls button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: #555;
+}
+
+.sidebar__font-controls button:nth-child(1) { font-size: 14px; }
+.sidebar__font-controls button:nth-child(2) { font-size: 18px; }
+.sidebar__font-controls button:nth-child(3) { font-size: 22px; }
+.sidebar__font-controls button:nth-child(4) { font-size: 26px; }
+
+.sidebar__font-controls button.active {
+  color: #119e71;
+}
+
+.duration{
+  font-size: 48px;
+  margin-right: 10px;
+
+}
+
+.selected__duration-wrapper{
+display: flex;
+align-items: center;
+  width: 100px;
+}
+
+.selected__text {
+  width: 200px;
+}
+
+.no--click{
+    cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .page__with-sidebar {
+    margin-left: 0;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .layout {
+    width: 100%;
+  }
+}
+
+
+
+

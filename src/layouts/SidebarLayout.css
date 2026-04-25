@@ -1,0 +1,21 @@
+.page__with-sidebar {
+  margin-left: 200px;
+}
+
+.main {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .page__with-sidebar {
+    margin-left: 0;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .layout {
+    width: 100%;
+  }
+}

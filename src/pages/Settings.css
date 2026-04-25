@@ -1,0 +1,26 @@
+.settings {
+  padding: 40px;
+  max-width: 700px;
+ 
+}
+
+.settings__title {
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+.settings__section {
+  margin-bottom: 30px;
+}
+
+.settings__label {
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+.line__divider {
+  margin: 30px 0;
+  color: #948e8e21;
+  opacity: 50%;
+}
+

@@ -1,0 +1,276 @@
+.book {
+  padding: 40px;
+}
+
+
+.book__wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+
+.book__right {
+  flex: 1;
+  max-width: 700px;
+}
+
+.book__title {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.book__author {
+  color: #777;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+
+.book__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 16px;
+  color: #555;
+  font-size: 14px;
+  width: 280px;
+}
+.meta--top , .meta--bottom{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.book__rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.book__duration {
+  display: flex;
+  align-items: center;
+}
+
+
+.book__description {
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+
+.book__btn {
+  padding: 10px 20px;
+  background-color: #73c9ae;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.book__btn:hover {
+  background-color: #5fb89e;
+}
+
+
+.book__left {
+  flex-shrink: 0;
+  margin-left: auto;
+}
+
+.book__left img {
+  width: 260px;
+  border-radius: 8px;
+}
+.book__actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.book__btn {
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.book__btn--primary ,.book__btn--secondary{
+  background-color: #032b41;
+  border: none;
+  color: white;
+  padding:  14px 30px;
+  margin-bottom: 20px;
+}
+
+.button--icons {
+
+  font-size: 28px;
+  margin-right: 4px;
+}
+
+.line__divider {
+  margin: 10px 0;
+  color: #948e8e21;
+  opacity: 50%;
+}
+
+.meta__icon {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+.key {
+  margin-left: 2px;
+}
+
+.book__save {
+  display: inline-flex;       
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px 6px 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 18px;
+  color: #0365f2;
+}
+
+
+.book__save-icon {
+  font-size: 30px;
+  color: #0365f2;;
+}
+
+.book__description-title {
+  margin-top: 20px;
+}
+
+.book__description-heading {
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+.book__tags {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+
+}
+
+.book__tag {
+  padding: 20px 12px;
+  border-radius: 4px;
+  
+  background-color: #ecf3f1;
+ 
+  font-size: 14px;
+ font-weight: 500;
+  cursor: default;     
+  pointer-events: none; 
+}
+
+.book__subtitle {
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.clock {
+  margin-right: 10px;
+}
+
+.skeleton {
+  background: #e5e7eb;
+  border-radius: 6px;
+  position: relative;
+  overflow: hidden;
+}
+
+.skeleton::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 150%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.6),
+    transparent
+  );
+  animation: shimmer 1.2s infinite;
+}
+
+@keyframes shimmer {
+  100% {
+    left: 100%;
+  }
+}
+
+.skeleton--title {
+  width: 60%;
+  height: 28px;
+  margin-bottom: 10px;
+}
+
+.skeleton--author {
+  width: 30%;
+  height: 16px;
+  margin-bottom: 10px;
+}
+
+.skeleton--subtitle {
+  width: 50%;
+  height: 18px;
+  margin-bottom: 20px;
+}
+
+.skeleton--meta {
+  width: 40%;
+  height: 16px;
+  margin-bottom: 20px;
+}
+
+.skeleton--text {
+  width: 100%;
+  height: 14px;
+  margin-bottom: 8px;
+}
+
+.skeleton--text.short {
+  width: 70%;
+}
+
+.skeleton--buttons {
+  width: 200px;
+  height: 40px;
+  margin-top: 20px;
+}
+
+.skeleton--image {
+  width: 260px;
+  height: 340px;
+  border-radius: 8px;
+}
+
+
+
+@media (max-width: 1200px) {
+    .books__section {
+    margin: 0;
+    padding: 0;
+
+    }
+    .layout {
+      margin: 0;
+    padding: 0;
+
+    }
+
+  }

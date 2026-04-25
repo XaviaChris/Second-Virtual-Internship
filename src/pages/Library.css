@@ -1,0 +1,56 @@
+.library {
+  padding: 40px;
+}
+
+.library__empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.library__image {
+  width: 250px;
+  margin-bottom: 20px;
+}
+
+.library__content {
+  padding: 20px;
+}
+
+.library__book--img{
+
+    width: 180px;
+}
+
+.library__grid {
+    display: flex; 
+}
+
+.book__card {
+    margin: 30px;
+}
+
+.subtext {
+    font-size: 14px;
+    color: grey;
+}
+
+.subtitle {
+    font-size: 14px;
+}
+
+.metrics {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4px;
+}
+
+.login--img {
+    width: 500px;
+}
+
+.login__cta--btn{
+    width: 200px;
+    margin: 30px;
+}
