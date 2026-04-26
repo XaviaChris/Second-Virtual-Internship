@@ -134,3 +134,18 @@
 .player__font-controls button.active {
   color: #10664b;
 }
+
+@media (max-width: 768px) {
+  .player__bar {
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    padding-top: 20px;
+  }
+  .player__timeline {
+    margin-left: 0;
+  }
+}
